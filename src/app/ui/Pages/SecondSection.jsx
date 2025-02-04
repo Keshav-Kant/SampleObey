@@ -3,10 +3,11 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Triangle from "../Images/Triangle";
-import './style.css'
+import './style.css';
+
 export default function SecondSection() {
   const texts = [
-    "This brand is from designer - for people. Make yours a collection which would never repeeat nor will be seen with anyone else get the peak creativity of time in your hands",
+    "This brand is from designer - for people. Make yours a collection which would never repeat nor will be seen with anyone else get the peak creativity of time in your hands",
     "Innovation Starts Here!",
     "Push the Boundaries!",
     "Think Different, Act Bold!",
@@ -21,7 +22,7 @@ export default function SecondSection() {
   return (
     <div className="relative w-[100vw] h-[100vh] bg-[#210D42] flex flex-col items-center justify-center text-white">
       {/* Arrow Button */}
-      <div className="border-4 translate-y-44 bg-white rounded-full absolute top-0">
+      <div className="border-4 translate-y-20 md:translate-y-44 bg-white rounded-full absolute top-0">
         <motion.button
           onClick={handleClick}
           whileTap={{ scale: 0.9 }}
@@ -44,7 +45,7 @@ export default function SecondSection() {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 20 }}
         transition={{ duration: 0.5 }}
-        className="text-8xl font-bold mb-10 text-center w-[40vw] AmsterdamFont tracking-wide leading-[5rem]"
+        className="text-6xl lg:text-8xl font-bold mb-10 text-center w-[80vw] sm:w-[70vw] md:w-[60vw] lg:w-[40vw] AmsterdamFont md:tracking-wide md:leading-[3rem] lg:leading-[5rem]"
       >
         {texts[index]}
       </motion.div>
