@@ -2,20 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.clip-left {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 70%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.clip-right {
+  clip-path: polygon(0 60%, 100% 40%, 100% 100%, 0 100%);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+/* ["FEFDFE","F7ABEB","210D42","000000","E6E6E5"]);  */
+
+
+/* globals.css or styles.css */
+
+
+::-webkit-scrollbar{
+  display: none;
 }
