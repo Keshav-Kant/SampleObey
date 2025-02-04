@@ -36,7 +36,7 @@ function MainPage() {
       {/* First Section (Sticky) */}
       <div
         id="firstSection"
-        className="w-[100vw] h-[100vh] bg-blue-500 sticky top-0 z-10"
+        className="w-[100vw] h-[100vh] sticky top-0 z-10"
       >
         <motion.div
           initial={{ opacity: 0 }}
