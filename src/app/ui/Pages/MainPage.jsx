@@ -13,7 +13,7 @@ function MainPage() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setDisableScroll(false); // Allow scrolling after 4 seconds
-    }, 4000); // Wait 4 seconds
+    }, 3000); // Wait 4 seconds
 
     return () => clearTimeout(timer);
   }, []);
@@ -36,7 +36,7 @@ function MainPage() {
       {/* First Section (Sticky) */}
       <div
         id="firstSection"
-        className="w-[100vw] h-[100vh] sticky top-0 z-10"
+        className="w-[100vw] h-[100vh]  z-10"
       >
         <motion.div
           initial={{ opacity: 0 }}
@@ -50,7 +50,7 @@ function MainPage() {
       {/* Second Section (Sticky) */}
       <div
         id="secondSection"
-        className="w-[100vw] h-[100vh] bg-gray-800 sticky top-0 z-10"
+        className="w-[100vw] h-[100vh] bg-gray-800 z-10"
       >
         <motion.div
           initial={{ opacity: 0 }}
@@ -65,7 +65,7 @@ function MainPage() {
       {/* Footer Section */}
       <div
         id="footerSection"
-        className="w-[100vw] h-[100vh] bg-gray-800 flex justify-center items-center text-white sticky top-0 z-10"
+        className="w-[100vw] h-[100vh] bg-gray-800 flex justify-center items-center text-white  z-10"
       >
         <motion.div
           initial={{ opacity: 0 }}
