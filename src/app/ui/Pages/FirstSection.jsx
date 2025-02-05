@@ -23,6 +23,8 @@ export default function FirstSection() {
 
       {/* Bottom Image */}
       <BottomImage />
+
+      
     </div>
   );
 }

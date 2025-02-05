@@ -12,7 +12,7 @@ function FooterSection() {
       {/* Right-Bottom Div */}
       <RightTriangle bgColor="#F7ABEB" />
 
-      <TopText position="bottom-0" right="right-10" />
+      <TopText position="bottom-0" />
 
     </div>
   );
